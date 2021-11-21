@@ -1,0 +1,21 @@
+.on {
+    border: 1px solid greenyellow;
+    padding: 10px 20px;
+    background-color: greenyellow;
+}
+.on2 {
+     border: 1px solid greenyellow;
+     padding: 10px 20px;
+ }
+.off {
+    border: 1px solid red;
+    padding: 10px 20px;
+    background-color: red;
+}
+.off2 {
+     border: 1px solid red;
+    padding: 10px 20px;
+ }
+.body {
+    margin-left: 1000px;
+}
