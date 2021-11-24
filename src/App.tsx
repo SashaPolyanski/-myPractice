@@ -9,6 +9,7 @@ function App() {
 
     let [ratingValue, setRatingValue] = useState<valuePropsType>(0)
     let [accValue, setAccValue] = useState<boolean>(false)
+    let [on, setOn] = useState<boolean>(true);
 
     return (
         <div className="App">
@@ -26,7 +27,8 @@ function App() {
                     setValue={setRatingValue}/>
 
 
-            <OnOff/>
+            <OnOff value={on}
+                   setOn={setOn}/>
         </div>
     );
 }
