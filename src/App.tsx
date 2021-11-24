@@ -19,14 +19,14 @@ function App() {
                 setValue={setRatingValue}/>
             <Accordion title={'MENU'}
                        value={accValue}
-                       setAccValue={setAccValue}/>
+                       setAccValue={setAccValue}
+                        items={["Vasya", "Sasha", "Verona" ]}/>
             <Accordion title={'USERS'}
                        value={accValue}
-                       setAccValue={setAccValue}/>
+                       setAccValue={setAccValue}
+                            items={[]}/>
             <Rating value={ratingValue}
                     setValue={setRatingValue}/>
-
-
             <OnOff value={on}
                    setOn={setOn}/>
         </div>

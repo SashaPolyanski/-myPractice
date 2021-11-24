@@ -7,6 +7,7 @@ type PropsType = {
     title: string
     setAccValue:(value:boolean)=>void
     value: boolean
+    items: string[]
 }
 
 function Accordion(props: PropsType) {
@@ -15,7 +16,7 @@ function Accordion(props: PropsType) {
 
         <div>
             <AccordionTitle title={props.title} setAccValue={props.setAccValue} value={props.value} />
-            {props.value ? '' : <AccordionBody/> }
+            {props.value ? '' : <AccordionBody items={props.items}/> }
         </div>
     )
 }
