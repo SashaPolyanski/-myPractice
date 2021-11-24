@@ -5,19 +5,17 @@ import AccordionBody from "./accordionBody";
 
 type PropsType = {
     title: string
+    setAccValue:(value:boolean)=>void
+    value: boolean
 }
 
 function Accordion(props: PropsType) {
-    let [collapsed, setCollapsed] = useState<boolean>()
-    const toggle = ()=>{
-        setCollapsed(!collapsed)
-    }
 
     return (
 
         <div>
-            <AccordionTitle title={props.title} toggle={toggle}/>
-            {collapsed ? '' : <AccordionBody/> }
+            <AccordionTitle title={props.title} setAccValue={props.setAccValue} value={props.value} />
+            {props.value ? '' : <AccordionBody/> }
         </div>
     )
 }

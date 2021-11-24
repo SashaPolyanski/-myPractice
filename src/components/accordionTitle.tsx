@@ -6,12 +6,13 @@ import React from 'react';
 
 type PropsType = {
     title: string
-    toggle:()=>void
+    setAccValue:(value:boolean)=>void
+    value: boolean
 }
 
 function AccordionTitle (props:PropsType) {
     return(
-        <h2 onClick={props.toggle}>{props.title}</h2>
+        <h2 onClick={()=>{props.setAccValue(!props.value)}}>{props.title}</h2>
     )
 }
 
